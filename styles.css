@@ -1,0 +1,57 @@
+:root {
+    --primary-dark: #660000;
+    --primary-red: #990000;
+    --accent-yellow: #ffcc00;
+    --white: #ffffff;
+    --text-grey: #cccccc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero {
+    display: flex;
+    padding: 50px 5%;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn-denuncie {
+    background: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-icones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 50px 5%;
+    background: #440000;
+}
+
+button:hover {
+    transition: all 0.3s ease;
+    filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; }
+    .nav-links { display: none; }
+}
